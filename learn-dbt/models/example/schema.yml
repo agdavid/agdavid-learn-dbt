@@ -1,4 +1,3 @@
-
 version: 2
 
 models:
@@ -16,6 +15,25 @@ models:
     columns:
       - name: id
         description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: snowflake_customer_purchases
+    description: "The total purchases for each customer in snowflake sample data"
+    columns:
+      - name: c_custkey
+        description: "The unique customer id for this table"
+        tests:
+          - unique
+          - not_null
+      - name: c_name
+        description: "The customer name for this table"
+        tests:
+          - unique
+          - not_null
+      - name: c_nationkey
+        description: "The nation key for this table"
         tests:
           - unique
           - not_null
