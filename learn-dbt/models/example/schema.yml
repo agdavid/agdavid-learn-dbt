@@ -65,3 +65,6 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: dates
+    description: "The row for each date as an incremental model of snowflake sample data"
