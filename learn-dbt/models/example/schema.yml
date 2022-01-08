@@ -51,3 +51,17 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: snowflake_cumulative_orders_by_date
+    description: "The cumulative sales by order date in snowflake sample data"
+    columns:
+      - name: o_orderdate
+        description: "The order date"
+        tests:
+          - unique
+          - not_null
+      - name: o_totalprice
+        description: "The sales for that date for a specific order"
+        tests:
+          - unique
+          - not_null
