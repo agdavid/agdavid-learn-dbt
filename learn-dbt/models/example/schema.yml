@@ -64,9 +64,6 @@ models:
         description: "The sales for that date for a specific order"
         tests:
 
-  - name: dates
-    description: "The row for each date as an incremental model of snowflake sample data"
-
   - name: incremental_dates
     description: "The row for eachtime as an incremental model of snowflake sample data"
 
