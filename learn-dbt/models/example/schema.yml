@@ -37,3 +37,17 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: snowflake_nation_customer_count
+    description: "The total number of customers for each nation in snowflake sample data"
+    columns:
+      - name: n_name
+        description: "The nation name for this table"
+        tests:
+          - unique
+          - not_null
+      - name: n_nationkey
+        description: "The nation key for this table"
+        tests:
+          - unique
+          - not_null
